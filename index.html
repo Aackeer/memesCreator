@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Creador de memes</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Creador de memes</h1>
+    </header>
+
+    <section id="options" class="container-fluid row">
+        <aside class="col-sm-4" id="lateral">
+            <h3><label for="tipoMeme">Tema:</label></h3>
+            <select id="tipoMeme">
+                <option value="fc">Fuera de contexto</option>
+                <option value="michis">Michis</option>
+                <option value="anime">Anime</option>
+            </select>
+            <h3><label for="imagenMeme">Selecciona imagen:</label></h3>
+            <select id="imagenMeme">
+                <!-- Categoria1 -->
+                <option value="media/U1.jpg">Golum</option>
+                <option value="media/U2.jpg">Niña</option>
+                <option value="media/U3.jpg">Chems</option>
+                <option value="media/U4.jpg">Stickman</option>
+
+                <!--Categoria2 -->
+                <option value="media/m1.jpg">Michi 1</option>
+                <option value="media/m2.jpg">Michi 2</option>
+                <option value="media/m3.jpg">Michi 3</option>
+                <option value="media/m4.jpg">Michi 4</option>
+
+                <!--Categoria3 -->
+                <option value="media/a1.jpg">Anime 1</option>
+                <option value="media/a2.jpg">Anime 2</option>
+                <option value="media/a3.jpg">Anime 3</option>
+                <option value="media/a4.jpg">Anime 4</option>
+            </select>
+
+            <h3><label for="escribe">Texto del meme:</label></h3>
+            <input type="text" id="escribe">
+
+            <h3><label for="creador">Ponle tu nombre:</label></h3>
+            <input type="text" id="creador">
+
+            <h3><label for="fondo">Color de Fondo:</label></h3>
+            <input type="color" id="fondo">
+
+            <h3><label for="fontType">Tipo de letra:</label></h3>
+            <select id="fontType">
+                <option value="Arial, sans-serif">Arial</option>
+                <option value="Times New Roman, serif">Times New Roman</option>
+                <option value="Georgia, serif">Georgia</option>
+            </select>
+
+            <button id="createMeme">Crealo</button>
+        </aside>
+
+        <section id="memeContenedor" class="hidden col-sm-8">
+            <img id="mostrarMeme" src="" alt="Meme">
+            <div id="memeTexto"></div>
+        </section>
+    </section>
+
+    <footer>
+        <h6>Ideas Creativas -@sauljake06@gmail.com</h6>
+        <h6>Temas técnicos-@sml</h6>
+    </footer>
+
+    <script src="js/funciones.js"></script>
+</body>
+
+</html>

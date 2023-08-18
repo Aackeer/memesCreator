@@ -1,0 +1,61 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+
+header{
+	background-color:#6527BE;
+	text-align:center;
+	color:#fff;
+ }
+
+body {
+    font-family: Arial, sans-serif;
+
+}
+
+footer{
+    background-color:#6527BE;
+    color: #fff;
+    padding: 20px 0px;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+#options {
+
+    background-color: #A7EDE7;
+}
+
+#memeContenedor {
+    text-align: center;
+    margin-top: 20px;
+    background-position: center top;
+    background-size: cover;
+    /* Ajusta el tamaño de la imagen de fondo */
+    position: relative
+}
+
+#lateral{
+    background-color: #9681EB;
+    text-align:center;
+    padding: 50px 100px; 
+}
+
+.hidden {
+    display: none;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+select,
+input[type="color"] {
+    margin-top: 5px;
+}
